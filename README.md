@@ -6,7 +6,7 @@
 ### [202503](202503)
 This folder contains source code artifacts presented by the authors to the _reply round of March 2025_.
 
-Contents are split in two folders according to the used programming language:
+Contents are split in folders according to the programming language:
 - [R](2025/R): provides R scripts to produce `Randomized Quantile Residuals` as included in **Figures 5** and **6**.
 - [python](2025/python): provides Python notebooks which implemented utility functions to allow for experiments with the extreme-H distribution.
   - [modelling](202503/python/modelling_H.ipynb): notebook generates **Table 3** estimated parameters and information criteria.
