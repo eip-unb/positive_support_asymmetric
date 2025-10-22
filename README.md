@@ -3,6 +3,20 @@
 
 ## Contents
 
+### [202510](./202510)
+This folder contains source code artifacts presented by the authors to the _reply round of October 2025_.
+
+Contents are split in folders according to the programming language:
+- [R](./202510/paper_results/eval_notebook_R.ipynb): provides R notebook to produce **Figure 5** (`Randomized Quantile Residuals`) and **Figure 6** (`Histograms and fitted pdfs`).
+- [python](./202510/tutorial_H_allinone.ipynb): provides Python notebook which implemented utility functions to allow for experiments with the extreme-H distribution.
+  - notebook generates **Table 3** (estimated parameters and information criteria).
+  - notebook provide use cases for `def estimate_extremeH(samples, particular_model_from_table1=4, initial_guess=[])` function:
+    - `samples` is a list of samples;
+    - `particular_model_from_table1` is a tentative particular model:
+        - `1` is Frechet, `2` is Weibull, `3` is Gamma and `4` is Half-normal. A tentative model is a requirement to the parameter estimation process.
+    - `initial_guess` is an optional parameter to skip **Algorithm 1** when estimating the distribution parameters. It is used for the Gamma distribution;
+    - the function returns the estimated `optimal_params_llf` parameters found by **Algorithm 2** and metrics (`aic, aicc, bic, edc, logLik`).
+
 ### [202503](./202503)
 This folder contains source code artifacts presented by the authors to the _reply round of March 2025_.
 
